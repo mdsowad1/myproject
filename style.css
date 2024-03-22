@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #FAF1EC;
+}
+
+/* Header Blog title */
+.header{
+color: white;
+padding: 30px;
+text-align: center;
+background: #f1f1f1;
+background-image: url(https://img.freepik.com/premium-photo/assortment-food-salad-avocado-quail-mushrooms-pumpkin-black-background-top-view-free-space-your-text_187166-35302.jpg?w=1060);
+}
+/* Style the top navigation bar */
+.topnav{
+overflow: hidden;
+background-color: white;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #6ad7f2c0;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn{
+float: left;
+width: 75%;
+}
+/* Right column */
+.rightcolumn {
+float: left;
+width: 25%;
+background-color: #f1f1f1;
+padding-left: 20px;
+}
+.rightcolumn .card img{
+height: 200px;
+}
+.rightcolumn .card .imgwidth{
+height: 95px;
+}
+.card{
+background-color: white;
+padding: 20px;
+margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Footer */
+.footer {
+text-align: center;
+background: #ddd;
+padding: 22px;
+}
+
+/* responsive */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+width: 100%;
+padding: 0;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+}
